@@ -54,14 +54,23 @@ bool App::Event_WindowRestored([[maybe_unused]] EventArgs& args)
 
 bool App::Event_GameModeSelection(EventArgs& args)
 {
-	int mode = std::stoi(args.GetValue<std::string>("mode", ""));
+	std::string modeStr = args.GetValue<std::string>("mode", "");
 
-	if (mode >= 0 && mode < static_cast<int>(GameModeType::NUM_GAME_MODES))
+	int mode = -1;
+	try 
 	{
-		g_theApp->SwitchToNewGameMode(static_cast<GameModeType>(mode));
-		return true;
+		mode = std::stoi(modeStr);
 	}
-	return false;
+	catch (...) 
+	{
+		GUARANTEE_RECOVERABLE(false, Stringf("Invalid mode input string: '%s'", modeStr.c_str()));
+		return false;
+	}
+
+	GUARANTEE_RECOVERABLE(mode >= 0 && mode < static_cast<int>(GameModeType::NUM_GAME_MODES), Stringf("Mode out of valid range: %d", mode));
+
+	g_theApp->SwitchToNewGameMode(static_cast<GameModeType>(mode));
+	return true;
 }
 
 bool App::Command_DisplayGameModes([[maybe_unused]] EventArgs& args)
