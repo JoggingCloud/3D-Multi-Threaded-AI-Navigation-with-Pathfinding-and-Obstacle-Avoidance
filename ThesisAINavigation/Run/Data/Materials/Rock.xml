@@ -1,0 +1,1 @@
+<Material name="Rock" shader="Data/Shaders/Terrain" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Terrain/RippledSand_Diffuse.jpg" normalTexture="Data/Images/Terrain/RippledSand_Normal.jpg" specGlossEmitTexture="Data/Images/Terrain/RippledSand_Specular.jpg"/>

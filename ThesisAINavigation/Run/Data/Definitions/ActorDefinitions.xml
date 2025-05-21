@@ -1,0 +1,10 @@
+<Definitions>
+  <!-- Agent -->
+  <ActorDefinition name="Agent" canBePossessed="true" visible="true">
+    <Collision radius="0.25~0.5" height="1.0f"/>
+    <Physics simulated="true" moveSpeed="0.5~1.0" turnSpeed="36.0f" drag="5.0f"/>
+    <Camera eyeHeight="1.0f"/>
+    <AI aiEnabled="true"/>
+    </ActorDefinition>
+</Definitions>
+

@@ -1,0 +1,10 @@
+<GameConfig
+    windowTitle="3D AI Navigation with Pathfinding and Obstacle Avoidance"
+    windowAspect="2.0"
+    windowFullscreen="true"
+    windowSize="1800,800"
+    windowPosition="75,150"
+/>
+
+
+

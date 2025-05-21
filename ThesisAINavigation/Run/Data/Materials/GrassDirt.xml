@@ -1,0 +1,1 @@
+<Material name="GrassDirt" shader="Data/Shaders/Terrain" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Terrain/AridGravelGround_Diffuse.jpg" normalTexture="Data/Images/Terrain/AridGravelGround_Normal.jpg" specGlossEmitTexture="Data/Images/Terrain/AridGravelGround_Specular.jpg"/>

@@ -1,0 +1,1 @@
+<Material name="SnowRock" shader="Data/Shaders/Terrain" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Terrain/IcelandicSandWithPebbles_Diffuse.jpg" normalTexture="Data/Images/Terrain/IcelandicSandWithPebbles_Normal.jpg" specGlossEmitTexture="Data/Images/Terrain/IcelandicSandWithPebbles_Specular.jpg"/>
