@@ -9,6 +9,7 @@ Each AI agent computes paths asynchronously using a multithreaded A* system I de
 How To Use
 ---------------------------------------------------------------------------------------------
 The game also provides you with instructions on how to play the game and what you need to do to beat the game. 
+
 The Keyboard Controls:
 1.	W and S key to move in the forward and backward direction
 2.	A and D key to move left or right
@@ -16,6 +17,7 @@ The Keyboard Controls:
 4.	Press P to toggle pausing and unpausing
 5.	Press F11 to toggle showing the cursor 
 6.	Use the mouse to look in any direction which dictates the direction you will move forward in 
+
 The rest of the debug keys and information regarding what they do is in the UI for each game mode.
 
 How To Run Application
